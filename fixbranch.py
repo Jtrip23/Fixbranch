@@ -28,7 +28,7 @@ def create_branches_from_excel(username, token, excel_file):
             base_branch = 'main'
             
             # Fixed new branch names
-            new_branch_names = ['feature_cloudhub', 'development_cloudhub', 'integration_cloudhub', 'release_cloudhub', 'cloudhub']
+            new_branch_names = ['feature_cloudhub1', 'development_cloudhub1', 'integration_cloudhub', 'release_cloudhub1', 'cloudhub']
             
             create_branch(username, token, repo_name, base_branch, new_branch_names)
     except Exception as e:
