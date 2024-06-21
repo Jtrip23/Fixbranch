@@ -25,7 +25,7 @@ def create_branches_from_excel(username, token, excel_file):
             repo_name = row['name']
             
             # Fixed base branch as 'release'
-            base_branch = 'release'
+            base_branch = 'main'
             
             # Fixed new branch names
             new_branch_names = ['feature_cloudhub', 'development_cloudhub', 'integration_cloudhub', 'release_cloudhub']
