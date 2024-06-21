@@ -23,7 +23,7 @@ jobs:
               
 
       - name: Create branch in GitHub
-        run: python fixbranch.py
+        run: python branch.py
         env:
           USERNAME: ${{ secrets.USERNAME }}
           TOKEN: ${{ secrets.TOKEN }}
