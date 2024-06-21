@@ -22,7 +22,7 @@ def create_branches_from_excel(username, token, excel_file):
     try:
         df = pd.read_excel(excel_file, engine='openpyxl')
         for index, row in df.iterrows():
-            repo_name = row['name']
+            repo_name = row['source_repo_name']
             
             # Fixed base branch as 'release'
             base_branch = 'release'
